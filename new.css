@@ -1,0 +1,29 @@
+ h2{
+  color:green;
+}
+
+body
+  {
+    background-image:url("bg.png");
+    }
+  h1
+  {color:red;
+  }
+  .s {
+    color:red;
+  }
+  fieldset
+  {
+    border:"2px";
+    /*margin-left:30%;
+    margin-right:30%;*/
+    width: 250px;
+    margin-top:50px;
+    padding-top:20px;
+    margin: auto;
+  }
+  @media only screen and (min-width: 800px) {
+      body
+      {
+          background-image:url("a.png");
+      }

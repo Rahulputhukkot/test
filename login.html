@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="new.css">
+  <script src="javas.js" ></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+<body>
+  <form name="form" id="formid" onsubmit="validate()">
+    <h1 align=center>LOGIN</h1>
+    <fieldset align=center>
+      <legend>Sign in</legend>
+      First Name<br><input type=text  id="fn" ><br>
+      Last Name<br><input type=text  id="ln" ><br>
+      Password<br><input type=password id="pass" title="should contain a small letter,a capital letter,symbol, and a number" ><br>
+      Confirm Password<br><input type=password  id="passconf" title="Should match the password given above" ><br>
+      Date Of Birth<br><input type=date  id="dob" ><br>
+      Email<br><input type=text  title="Eg:example@asd.com" id="email" ><br>
+      Mobile Number<br><input type=text id="num" title="should be a 10 digit number"><br>
+      <input type="submit" value="Login" >
+      <input type="reset" value="Reset">
+      <h2 id="a" hidden=""> validation success</h2>
+      <h2 id="s" class="s" hidden=""> validation Failed</h2>
+    </fieldset>
+</form>
+<script >
+  document.getElementById("formid").addEventListener("submit", function(event){
+    event.preventDefault()
+});
+</script>
+
+  </body>
+</html>
